@@ -1,0 +1,15 @@
+<div>
+    <!-- loginform is the css found in login.component.css -->
+     <!-- formGroup is defined in login.component.ts and it is used for
+      tracking name and email.  -->
+    <form class="loginform" [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+      <label for="name">Name:</label>
+      <input type="text" id="name"  formControlName="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email"  formControlName="email" required>
+  
+      <button type="submit">Login</button>
+    </form>
+
+  </div>
